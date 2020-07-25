@@ -34,6 +34,9 @@ function preload()
 
 function create ()
 {
+    this.input.once('pointerup', function () {
+        this.scale.startFullscreen();
+    }, this);
     this.cameras.main.setBounds(-config.width / 2, -config.height / 2, config.width, config.height);
 
     // border
@@ -68,7 +71,6 @@ function create ()
     // collision target
 
     this.target = this.add.circle(x, y, cursor_diameter * 3, 0xff0000);
-    console.log(this.target.x, this.target.y);
     this.target.setOrigin(0.5, 0.5);
     this.target.setStrokeStyle(2, 0xffffff);
 
