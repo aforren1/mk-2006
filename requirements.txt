@@ -1,0 +1,14 @@
+# requirements for communicating results
+# via email/Google Drive
+PyDrive2 # a maintained fork of PyDrive
+requests # for Mailgun
+python-dotenv # for Mailgun
+
+# Requirements for python server
+aiohttp==3.6.2 # ???
+python-socketio==4.6.0 # bidirectional communication client<->server
+gunicorn==20.0.4 # ???
+
+# Other Python requirements
+# e.g.
+# numpy==1.19.0

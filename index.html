@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MK 2006</title>
+    <link rel="stylesheet" type="text/css" href="client/style.css">
+    <!--Polyfill for URL parsing (for Internet Explorer, if we support it)-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=URL"></script>
+    <!--Graphics/audio/input...-->
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.24.1/dist/phaser.min.js"></script>
+    <!--Server-client communication-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.slim.js"></script>
+    <!--Detect devtools (sort of); doesn't actually work on IE due to ES6 requirement-->
+    <script src="//cdn.jsdelivr.net/npm/devtools-detect@3.0.0/index.js"></script>
+    <!--Parse User Agent (to get an idea of browser, OS, ...)-->
+    <script src="https://cdn.jsdelivr.net/npm/ua-parser-js@0.7.21/src/ua-parser.min.js"></script>
+</head>
+
+<body>
+    <noscript>
+        Javascript is *required* for this to work!
+    </noscript>
+    <script type="text/javascript" src="client/main.js"></script>
+</body>
+
+</html>
