@@ -5,7 +5,7 @@ requests # for Mailgun
 python-dotenv # for Mailgun
 
 # Requirements for python server
-aiohttp==3.6.2 # ???
+aiohttp==3.7.4 # ???
 python-socketio==4.6.0 # bidirectional communication client<->server
 gunicorn==20.0.4 # ???
 
